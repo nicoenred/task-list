@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -9,9 +10,15 @@ export class HeaderComponent implements OnInit {
 
   title: string = "My task list";
 
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  
+  toggleAddTask(): void{
+    console.log("Funciona");
   }
 
 }
