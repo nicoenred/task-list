@@ -1,7 +1,7 @@
 /* Esto es una simulación de tarea para que funcione la app*/ 
 
 import {Task} from "./Task"
-export const TASK: Task[] = [
+export const TASKS: Task[] = [
     {
     id: 1,
     text : "Terminar módulo de angular con práctica",
