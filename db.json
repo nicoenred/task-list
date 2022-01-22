@@ -1,0 +1,31 @@
+{
+    "task": [
+        {
+            "id": 1,
+            "text" : "Terminar módulo de angular con práctica",
+            "day": "Enero",
+            "reminder": true
+        },
+        
+        
+        {
+            "id": 2,
+            "text" : "Hacer cuentas",
+            "day": "Todos los meses",
+            "reminder" : true
+        },
+        
+        {
+            "id": 3,
+            "text" : "Empezar facultad",
+            "day": "Marzo",
+            "reminder": true
+        },
+        
+        {
+            "id": 4,
+            "text" : "Comer",
+            "day": "todo el día",
+            "reminder": false
+        }  
+    ] }
