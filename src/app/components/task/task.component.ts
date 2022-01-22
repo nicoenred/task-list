@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { TaskService } from '../../service/task.service';
 import {Task} from '../../Task';
-import { TASKS } from 'src/app/mock-task';
+
 
 @Component({
   selector: 'app-task',
@@ -9,11 +10,17 @@ import { TASKS } from 'src/app/mock-task';
 })
 export class TaskComponent implements OnInit {
 
-  tasks: Task[] = TASKS;
+  tasks: Task[] = [];
   
-  constructor() { }
+  constructor(
+    private taskService: TaskService
+  ) {}
 
   ngOnInit(): void {
+    //Estalblecemos promesas (Callbacks y asincronismo)
+    this.taskService.getTask().subscribe((tasks)=>(
+      this.tasks = tasks 
+    ));
   }
 
-}
+};
