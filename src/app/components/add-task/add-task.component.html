@@ -1,0 +1,40 @@
+<form 
+    class="ad-form"  
+    (ngSubmit)="onSubmit()"
+    *ngIf="showAddTask"
+    >
+    <div class="form-control">
+        <label for="text">Task</label>
+        <input 
+            type="text" 
+            name="text" 
+            id="text" 
+            placeholder="¿Qué tenés que hacer?"
+            [(ngModel)]="text"
+        />
+    </div>
+
+    <div class="form-control">
+        <label for="day">Dia y hora</label>
+        <input 
+            type="text" 
+            name="day" 
+            id="day" 
+            placeholder="¿Cuándo?"
+            [(ngModel)]="day"
+        />
+    </div>
+
+    <div class="form-control form-control-check">
+        <label for="reminder">Resaltar</label>
+        <input 
+            type="checkbox" 
+            name="reminder" 
+            id="reminder"
+            [(ngModel)]="reminder"
+        />
+    </div>
+
+    <input type="submit" value="Agendalo bb" class="btn btn-block">
+
+</form>
