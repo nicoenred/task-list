@@ -33,10 +33,9 @@ export class AddTaskComponent implements OnInit {
       alert("¿Qué vas a guardar si no anotás nada boludo?")
     }
 
-    /* así se construye un objeto simplificando en JS*/
+    /* así se construye un objeto simplificando en JS Esto agrega una tarea que viene del formulario*/
     const {text, day, reminder} = this;
     const newTask = {text, day, reminder};
-
     this.onAddTask.emit(newTask);
   }
 

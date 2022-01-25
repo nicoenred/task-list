@@ -1,28 +1,16 @@
 {
   "task": [
     {
-      "id": 2,
-      "text": "Hacer cuentas",
-      "day": "Todos los meses",
-      "reminder": true
-    },
-    {
-      "id": 3,
-      "text": "Empezar facultad",
-      "day": "Marzo",
-      "reminder": true
-    },
-    {
-      "text": "Tarea de prueba",
-      "day": "mañana",
-      "reminder": false,
-      "id": 4
-    },
-    {
-      "text": "Tarea de prueba",
-      "day": "mañana",
+      "text": "Salir a dar un paseo",
+      "day": "Todos los días",
       "reminder": true,
-      "id": 6
+      "id": 1
+    },
+    {
+      "text": "Mirar por la ventana a ver si llueve",
+      "day": "En otoño",
+      "reminder": true,
+      "id": 3
     }
   ]
 }

@@ -4,6 +4,7 @@
         color="{{showAddTask ? 'red':'green'}}" 
         texto="{{showAddTask ? 'Hola bb':'¿Qué vas a hacer hoy?'}}"
         (btnClick)="toggleAddTask()"
+        *ngIf="hasRoute('/')"
     >
     </app-button>
 
